@@ -4,11 +4,34 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
    <>
-<nav className='w-full h-[10vh] bg-[#F8EDE8]  flex justify-center items-center gap-[6vw] text-xl font-light relative'>
-<Link className=' hover:bg-black hover:text-white ease-in-out transition duration-500 px-6 py-2 rounded-full ' to='/'>Home</Link>
-   <Link className='hover:bg-black hover:text-white ease-in-out transition duration-500 px-6 py-2 rounded-full '  to='about'>About</Link>
-   <Link className='hover:bg-black hover:text-white ease-in-out transition duration-500 px-6 py-2 rounded-full '  to='contact'>Contact</Link>
-</nav>
+ <nav className="h-[10vh] w-full flex items-center justify-between ">
+            <img
+                className="h-full"
+                src="https://static.vecteezy.com/system/resources/thumbnails/008/212/813/small/cooking-logo-design-vector.jpg"
+                alt=""
+            />
+            <div className="flex gap-x-10 text-md items-center">
+                <Link className="hover:text-green-600 duration-200" to="/">
+                    Home
+                </Link>
+                <Link
+                    className="hover:text-green-600 duration-200"
+                    to="/recipes"
+                >
+                    Recipes
+                </Link>
+                <Link className="hover:text-green-600 duration-200" to="/about">
+                    About
+                </Link>
+                <Link
+                    className="hover:text-green-600 duration-200"
+                    to="/contact"
+                >
+                    Contact
+                </Link>
+            </div>
+            <i className="text-3xl ri-grid-fill text-green-600"></i>
+        </nav>
    </>
   )
 }

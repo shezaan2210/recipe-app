@@ -7,7 +7,7 @@ const About = () => {
                 LET'S TALK ABOUT WHAT WE ARE
             </h1>
             <button className="rounded-md text-md bg-green-600 text-white py-2 px-5 hover:bg-green-700 duration-200">
-                JAAN PEHCHAN BNA LO FRAANDS &nbsp; &#8594;
+                About Us &nbsp; &#8594;
             </button>
         </div>
     );
